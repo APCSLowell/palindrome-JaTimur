@@ -23,8 +23,8 @@ public void tester()
         e.printStackTrace();
     }
   System.out.println("there are " + lines.length + " lines");
-  for (int i=0; i < lines.length(); i++){
-    if(isPalindrome(lowercaseNoSpace(lines[i]))==true){
+  for (int i=0; i < lines.length; i++){
+    if(isPalindrome(lines[i])){
       System.out.println(lines[i] + " IS a palindrome.");
     }
     else{
@@ -33,7 +33,7 @@ public void tester()
   }
 }
 public boolean isPalindrome(String word){
-  return(word.equals(reverse(word)));
+  return(lowercaseNoSpace(word).equals(reverse(lowercaseNoSpace(word))));
 }
 public String reverse(String str){
   String word="";
