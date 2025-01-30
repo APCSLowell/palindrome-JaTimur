@@ -23,7 +23,7 @@ public void tester()
         e.printStackTrace();
     }
   System.out.println("there are " + lines.length + " lines");
-  for (int i=0; i < lines.length; i++){
+  for (int i=0; i < lines.length(); i++){
     if(isPalindrome(lowercaseNoSpace(lines[i]))==true){
       System.out.println(lines[i] + " IS a palindrome.");
     }
