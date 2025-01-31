@@ -23,7 +23,7 @@ public class PalindromeChecker {
     }
   System.out.println("there are " + lines.length + " lines");
   for (int i=0; i < lines.length; i++){
-    if(isPalindrome(lines[i])){
+    if(palindrome(lines[i])){
       System.out.println(lines[i] + " IS a palindrome.");
     }
     else{
@@ -31,7 +31,7 @@ public class PalindromeChecker {
     }
   }
 }
-  public boolean isPalindrome(String word){
+  public boolean palindrome(String word){
   return(lowercaseNoSpace(word).equals(reverse(lowercaseNoSpace(word))));
 }
 public String reverse(String str){
